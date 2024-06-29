@@ -1,0 +1,97 @@
+.landing_page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+
+    &_banner {
+        display: flex;
+        flex-direction: column;
+        background-color: $secondary_color;
+        color: $main_color;
+
+        &_text {
+            font-size: 35px;
+            color: $main_color;
+            text-align: center;
+            line-height: 151%;
+            margin-top: 30px;
+        }
+
+        &_btns {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 85px;
+            margin-bottom: 45px;
+        }
+
+    }
+
+    .banner_btn {
+        @extend .btn;
+        margin-right: 10px;
+
+        &:hover {
+            font-weight: 700;
+        }
+    }
+
+    &_desc {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.6fr 0.4fr;
+        // grid-template-rows: 1.5fr 0.5fr;
+        // gap: 0px 0px;
+        // grid-template-areas:
+        //     "desc_title desc_img"
+        //     "desc_content desc_img";
+
+        &_content {
+            border-right: 2px solid $secondary_color;
+        }
+
+        &_title {
+            // grid-area: desc_title;
+            padding: 0 100px 35px 50px;
+            margin-top: 185px;
+            font-weight: 400;
+            font-size: 70px;
+            line-height: 100%;
+
+        }
+
+        &_text {
+            padding: 25px 75px 25px 50px;
+            border-top: 2px solid $secondary_color;
+            font-size: 25px;
+            line-height: 150%;
+        }
+
+        &_btn {
+            display: flex;
+            justify-content: space-around;
+            padding: 25px 180px 25px 180px;
+            font-size: 40px;
+            line-height: 170%;
+            text-align: center;
+            background-color: $secondary_color;
+            color: $main_color;
+            cursor: pointer;
+        }
+
+        &_img {
+            // grid-area: desc_img;
+            justify-self: end;
+            // border-left: 3px solid $secondary_color;
+        }
+    }
+
+    &_main_img {
+        width: 100%;
+        height: 1090px;
+        background-image: url(/img/img2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,28 @@
+.footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+
+    &_nav {
+        margin-top: 45px;
+
+        &_headline,
+        &_item {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 100%;
+        }
+
+        &_headline {
+            margin-bottom: 37px;
+        }
+
+        &_item {
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+    }
+
+
+}

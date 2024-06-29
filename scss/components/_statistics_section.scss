@@ -1,0 +1,63 @@
+.statistics_section {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row;
+
+    &_title_box {
+        width: 100%;
+        border-top: 2px solid $secondary_color;
+        border-bottom: 2px solid $secondary_color;
+        font-size: 55px;
+        line-height: 100%;
+        padding: 20px 0 35px 50px;
+    }
+
+    &_data {
+        width: 95%;
+        display: grid;
+        justify-self: center;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+
+        &_desc {
+            font-size: 30px;
+            line-height: 117%;
+            text-align: center;
+            margin-top: 35px;
+        }
+    }
+
+    &_list_box {
+        width: 100%;
+        margin-top: 25px;
+
+
+    }
+
+    &_list {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: $secondary_color;
+
+        & li {
+            padding-right: 90px;
+            color: $main_color;
+            font-size: 40px;
+            line-height: 200%;
+
+            &:last-child {
+                padding-right: 0;
+            }
+
+        }
+    }
+}
