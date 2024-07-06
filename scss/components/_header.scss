@@ -23,26 +23,18 @@
         margin-left: 100px;
         overflow: hidden;
         box-sizing: border-box;
+    }
 
-        &_item {
-            margin-right: 30px;
-            font-size: 18px;
-
-
-            &:last-child {
-                margin-right: 0;
-            }
-
-            &:hover {
-                padding: 3px;
-                background-color: $secondary_color;
-                color: $main_color;
-                font-weight: 500;
-
-            }
-        }
-
-
+    .en,
+    .es,
+    .fr {
+        margin-right: 25px;
+        font-size: 18px;
+        padding: 5px 10px;
+        border: 1px solid $secondary_color;
+        border-radius: 5px;
+        background-color: $main_color;
+        cursor: pointer;
     }
 
     .header_burger_menu {

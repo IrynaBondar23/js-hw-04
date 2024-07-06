@@ -13,11 +13,11 @@
         <img src="./img/icons/appStore.svg" alt="" />
         <img src="./img/icons/googlePlay.svg" alt="" />
       </div>
-      <ul class="language_list">
-        <li class="language_list_item"><a href="">EN</a></li>
-        <li class="language_list_item"><a href="">ES</a></li>
-        <li class="language_list_item"><a href="">FR</a></li>
-      </ul>
+      <div class="language_list">
+        <button class="en" href="">EN</button>
+        <button class="es" href="">ES</button>
+        <button class="fr" href="">FR</button>
+      </div>
       <div class="header_burger_menu">
         <svg tabindex="1" class="burger_menu_icon">
           <use href="./img/icons/symbol-defs.svg#icon-menu"></use>
@@ -39,8 +39,8 @@
             iconic virtual restaurant brands from your existing kitchen!
           </p>
           <div class="landing_page_banner_btns">
-            <a href="#" class="banner_btn">Become a partner</a>
-            <a href="#" class="banner_btn">Learn more</a>
+            <a href="#" class="banner_btn partner_btn">Become a partner</a>
+            <a href="#" class="banner_btn details_btn">Learn more</a>
           </div>
         </article>
         <article class="landing_page_desc">
@@ -71,7 +71,7 @@
                 alt="calendar icon"
               />
             </div>
-            <p class="statistics_section_card_desc">4 <br />Years</p>
+            <p class="statistics_section_card_desc stat1">4 <br />Years</p>
           </div>
           <div class="statistics_section_card">
             <div class="statistics_section_card_img_box">
@@ -81,7 +81,7 @@
                 alt="cheese icon"
               />
             </div>
-            <p class="statistics_section_card_desc">
+            <p class="statistics_section_card_desc stat2">
               425,364 <br />Cheese Slices
             </p>
           </div>
@@ -93,7 +93,7 @@
                 alt="popato fries icon"
               />
             </div>
-            <p class="statistics_section_card_desc">
+            <p class="statistics_section_card_desc stat3">
               9.2 million <br />Sweet Potato <br />Fries
             </p>
           </div>
@@ -105,7 +105,7 @@
                 alt="noodles icon"
               />
             </div>
-            <p class="statistics_section_card_desc">
+            <p class="statistics_section_card_desc stat4">
               7,104 kms <br />
               of Noodles
             </p>
@@ -118,7 +118,7 @@
                 alt="praws icon"
               />
             </div>
-            <p class="statistics_section_card_desc">
+            <p class="statistics_section_card_desc stat5">
               314,530 <br />
               Tiger Prawns
             </p>
@@ -131,7 +131,7 @@
                 alt="scooter icon"
               />
             </div>
-            <p class="statistics_section_card_desc">
+            <p class="statistics_section_card_desc stat6">
               1,000,000+ <br />
               Rides
             </p>
@@ -139,58 +139,59 @@
         </article>
         <div class="statistics_section_list_box">
           <ul class="statistics_section_list">
-            <li>100 Restaurants</li>
-            <li>25 Cities</li>
-            <li>5 Brands</li>
-            <li>And More!</li>
+            <li class="restaurants_count">100 Restaurants</li>
+            <li class="cities_count">25 Cities</li>
+            <li class="brands_count">5 Brands</li>
+            <li class="more_count">And More!</li>
           </ul>
         </div>
       </section>
       <footer class="footer">
         <div class="footer_nav">
-          <p class="footer_nav_headline">Our restaurants</p>
+          <p class="footer_nav_headline restaurant_title">Our restaurants</p>
           <ul class="footer_nav_list">
-            <li class="footer_nav_item">Bian Dang</li>
-            <li class="footer_nav_item">A Burgers</li>
-            <li class="footer_nav_item">Mission Saigon</li>
-            <li class="footer_nav_item">Out Fry</li>
-            <li class="footer_nav_item">Stacksando</li>
+            <li class="footer_nav_item restaurant_item1">Bian Dang</li>
+            <li class="footer_nav_item restaurant_item2">A Burgers</li>
+            <li class="footer_nav_item restaurant_item3">Mission Saigon</li>
+            <li class="footer_nav_item restaurant_item4">Out Fry</li>
+            <li class="footer_nav_item restaurant_item5">Stacksando</li>
           </ul>
         </div>
         <div class="footer_nav">
-          <p class="footer_nav_headline">Find us</p>
+          <p class="footer_nav_headline find_title">Find us</p>
           <ul class="footer_nav_list">
-            <li class="footer_nav_item">Address</li>
-            <li class="footer_nav_item">
+            <li class="footer_nav_item find_item1">Address</li>
+            <li class="footer_nav_item find_item2">
               Sorry, we’re just a <br />
               digital food court
             </li>
           </ul>
         </div>
         <div class="footer_nav">
-          <p class="footer_nav_headline">Corporate</p>
+          <p class="footer_nav_headline corporate_title">Corporate</p>
           <ul class="footer_nav_list">
-            <li class="footer_nav_item">Contact</li>
-            <li class="footer_nav_item">Our Story</li>
-            <li class="footer_nav_item">Jobs</li>
-            <li class="footer_nav_item">Support</li>
+            <li class="footer_nav_item corporate_item1">Contact</li>
+            <li class="footer_nav_item corporate_item2">Our Story</li>
+            <li class="footer_nav_item corporate_item3">Jobs</li>
+            <li class="footer_nav_item corporate_item4">Support</li>
           </ul>
         </div>
         <div class="footer_nav">
-          <p class="footer_nav_headline">Socials</p>
+          <p class="footer_nav_headline social_title">Socials</p>
           <ul class="footer_nav_list">
-            <li class="footer_nav_item">Instagram</li>
-            <li class="footer_nav_item">Facebook</li>
+            <li class="footer_nav_item social_item1">Instagram</li>
+            <li class="footer_nav_item social_item2">Facebook</li>
           </ul>
         </div>
         <div class="footer_nav">
-          <p class="footer_nav_headline">Order on</p>
+          <p class="footer_nav_headline order_title">Order on</p>
           <ul class="footer_nav_list">
-            <li class="footer_nav_item">Download on Android</li>
-            <li class="footer_nav_item">Download on iOS</li>
+            <li class="footer_nav_item order_item1">Download on Android</li>
+            <li class="footer_nav_item order_item2">Download on iOS</li>
           </ul>
         </div>
       </footer>
     </main>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
