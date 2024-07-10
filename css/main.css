@@ -77,6 +77,11 @@ body {
   background-color: #FAEDD4;
   cursor: pointer;
 }
+.header .active {
+  background-color: #FB3B2D;
+  color: #FAEDD4;
+  font-weight: 600;
+}
 .header .header_burger_menu {
   position: relative;
   display: flex;
@@ -95,9 +100,6 @@ body {
   position: absolute;
   top: 180px;
   left: -300px;
-}
-.header .burger_menu_icon:focus + .burger_nav {
-  display: flex;
 }
 .header .burger_nav_list {
   width: 800px;

@@ -3,6 +3,18 @@ import { es } from "./js/es.js";
 import { fr } from "./js/fr.js";
 import { refs } from "./js/refs.js";
 
+const burgerIcon = document.querySelector(".burger_menu_icon");
+const burgerMenu = document.querySelector(".burger_nav");
+console.dir(burgerMenu);
+burgerIcon.addEventListener("click", (e) => {
+  burgerMenu.style.display = "block";
+});
+document.addEventListener("click", (e) => {
+  if (!burgerMenu.contains(e.target) && !burgerIcon.contains(e.target)) {
+    burgerMenu.style.display = "none";
+  }
+});
+
 const {
   btn: { btn_en, btn_es, btn_fr },
   navigation: { contact, brand, about },
@@ -74,21 +86,38 @@ function translatePage(lang) {
   order_item2.textContent = lang.order_item2;
 }
 
-btn_en.addEventListener("click", () => {
-  translatePage(en);
-});
-btn_es.addEventListener("click", () => {
-  translatePage(es);
-});
-btn_fr.addEventListener("click", () => {
-  translatePage(fr);
-});
+// btn_en.addEventListener("click", () => {
+//   translatePage(en);
+// });
+// btn_es.addEventListener("click", () => {
+//   translatePage(es);
+// });
+// btn_fr.addEventListener("click", () => {
+//   translatePage(fr);
+// });
 
-// const button = { btn_en, btn_es, btn_fr };
-// const languages = { en, es, fr };
+// const button = { btn_en, btn_ua, btn_fr };
+// const languages = { en, fr, ua };
 // Object.keys(button).forEach((key) => {
-//   button[key].addEventListener("click", () => {
+//   button[key].addEventListener("click", (e) => {
 //     const langCode = key.split("_")[1];
-//     translatePage(languages[langCode]);
+//     changeLanguage(languages[langCode]);
+//     Object.keys(button).forEach((btnKey) => {
+//       button[btnKey].classList.remove("active");
+//     });
+//     e.target.classList.add("active");
 //   });
 // });
+
+const button = { btn_en, btn_es, btn_fr };
+const languages = { en, es, fr };
+Object.keys(button).forEach((key) => {
+  button[key].addEventListener("click", (e) => {
+    const langCode = key.split("_")[1];
+    translatePage(languages[langCode]);
+    Object.keys(button).forEach((btnKey) => {
+      button[btnKey].classList.remove("active");
+    });
+    e.target.classList.add("active");
+  });
+});

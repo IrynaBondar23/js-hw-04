@@ -37,6 +37,12 @@
         cursor: pointer;
     }
 
+    .active {
+        background-color: $secondary_color;
+        color: $main_color;
+        font-weight: 600;
+    }
+
     .header_burger_menu {
         position: relative;
         display: flex;
@@ -59,9 +65,9 @@
         left: -300px;
     }
 
-    .burger_menu_icon:focus+.burger_nav {
-        display: flex;
-    }
+    // .burger_menu_icon:focus+.burger_nav {
+    //     display: flex;
+    // }
 
     .burger_nav_list {
         width: 800px;
